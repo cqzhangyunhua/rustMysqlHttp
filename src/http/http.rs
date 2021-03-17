@@ -46,6 +46,10 @@ async fn manual_hello() -> impl Responder {
     HttpResponse::Ok().body("Hey there!")
 }
 
+#[get("/testa")]
+async fn testa() -> impl Responder {
+    HttpResponse::Ok().body("Hey there!")
+}
 #[actix_web::main]
 pub async fn testmain() -> std::io::Result<()>
 {
@@ -65,6 +69,7 @@ pub async fn testmain() -> std::io::Result<()>
                 .service(hello)
                 .service(echo)
                 .route("/hey", web::get().to(manual_hello))
+            //App::new() .service(testa)
         })
         .workers(1)
         .bind("127.0.0.1:9090")?

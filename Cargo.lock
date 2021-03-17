@@ -494,9 +494,9 @@ dependencies = [
 
 [[package]]
 name = "configparser"
-version = "2.0.0"
+version = "1.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e2616d8c1fbf887d76dd8e067ec1bc3be7669994378428b4415a8e4ad57baae1"
+checksum = "fe1d7dcda7d1da79e444bdfba1465f2f849a58b07774e1df473ee77030cb47a7"
 
 [[package]]
 name = "const_fn"
