@@ -11,3 +11,4 @@ linkmysql = mysql://root:root@xxxx.xxx.xxx:3306/test
 ```
 ### 交叉编译 .cargo下是用于交叉编译，当前为ubuntu 编译成windows
 .cargo/config 用于配置交叉编译
+cargo build --release --target=x86_64-pc-windows-gnu
